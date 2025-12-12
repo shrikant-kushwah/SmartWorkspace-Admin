@@ -82,3 +82,57 @@ input:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
+
+/* responsive */
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .sidebar {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  table.list {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+

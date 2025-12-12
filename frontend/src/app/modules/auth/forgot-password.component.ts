@@ -31,6 +31,9 @@ import { AuthService } from '../../core/services/auth.service';
           <button type="submit" [disabled]="loading">
             {{ loading ? 'Sending…' : 'Send reset link' }}
           </button>
+          <button type="button" class="secondary" routerLink="/auth/login">
+            Back to login
+          </button>
         </form>
 
         <p class="card success" *ngIf="message">{{ message }}</p>
